@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/css.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet"
+    >
+
+    <title>Econnect</title>
+
+  </head>
+  <body>
+    <header>
+    <h1>ECONNECT</h1>
+    <div class="nav-bar">
+      <div class="image-logo">
+        <img src="assets/econnect.png" alt="Logo Econnect">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#whyus">Why us</a></li>
+          <li><a href="#droppoint">Drop Point</a></li>
+          <li><a href="#community">Community</a></li>
+        </ul>
+      </nav>
+      <div class="nav-login">
+        <a href="#">Log in</a> 
+        <a href="#">Sign in</a>
+      </div>
+    </div>
+    </header>
+    <main>
+      <div id="content">
+        <div id="main-sections">
+          <section class="container">
+            <div class="text-content">
+              <h2>LANGKAH KECIL<br>UNTUK PERUBAHAN</h2>
+                <p>Langkah kecil yang aku dan kamu ambil,
+                berdampak besar terhadap lingkungan.</p>
+            </div>
+            <div class="image-content">
+            <img src="assets/econnect.png" alt="Logo Econnect">
+            </div>
+          </section>
+          <section class="content-article">
+            <article class="description card" id="whyus">
+              <h2><strong>Why Us</strong></h2>
+                <p class="paragraph">
+                  "Menurut data Sistem Pengelolaan Sampah Nasional (SIPSN) <br>
+                  Kementerian Lingkungan Hidup dan Kehutanan (KLHK) 2023, <br>
+                  hingga 24 Juli 2024, timbunan sampah nasional <br>mencapai 31,9 juta ton
+                  dan 11,4 juta ton diantaranya<br>tidak terkelola dengan baik."
+                </p>
+                <p class="paragraph">
+                  Econnect hadir dengan tujuan untuk mengurangi berbagai<br> dampak lingkungan
+                  yang diakibatkan oleh menumpuknya sampah saat ini.<br>
+                  Kami mengelola kembali sampah kalian sehingga dapat dimanfaatkan Kembali.
+                </p>
+            </article>
+            <article class="description card" id="droppoint">
+              <h2><strong>Drop Point</strong></h2>
+              <p class="paragraph">Kenali lokasi Drop sampah di tempat kamu berada, dan buang sampah untuk mendapatkan point.</p>
+                <img src="assets/maps.png" class="maps" alt="Maps Lokasi Drop Point">
+            </article>
+            <article class="description card" id="community">
+              <h2><strong>Community</strong></h2>
+              <p class="paragraph">Terhubung dengan ribuan individu yang memiliki hobi serupa,<br>untuk membangun aksi positif.</p>
+              <button onclick="showPopup()">Connect</button>
+            </article>
+          </section>
+        </div>
+          <aside>
+            <section class="description card">
+              <h2><strong>Econnect</strong></h2>
+              <ul class="logo">
+                <li>Sejak 2024</li>
+                <li>
+                  Bekerja sama dengan
+                    <div class="logo-partners">
+                      <img src="assets/waste4change.png" alt="Waste4Change">
+                      <img src="assets/hypermart.webp" alt="Hypermart">
+                      <img src="assets/carrefour.png" alt="Carrefour">
+                      <img src="assets/indomaret.png" alt="Indomaret">
+                      <img src="assets/veolia.png" alt="Veolia">
+                    </div>
+                </li>
+              </ul>
+            </section>
+          </aside>
+      </div>
+      <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+          <h2>Kamu Berhasil Terhubung!</h2>
+          <p>Selamat, Kamu berhasil terhubung dengan komunitas kami. Ayo jelajahi lebih banyak!</p>
+          <button class="popup-close" onclick="closePopup()">Tutup</button>
+          <button class="popup-ok" onclick="confirmConnect()">Ok</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Econnect &copy; 2025</p>
+    </footer>
+  <script src="js/script.js" async></script>
+  </body>
+</html>
